@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.hiden {
+  display: none;
+}
+
+.nav_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(180deg, #c2c2c2 50%, #dddddd, black);
+}
+
+.logomarca img {
+  width: 12em;
+  height: 5em;
+}
+
+.header_botao ul {
+  display: flex;
+  gap: 0 35px;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+ul li:active {
+  border-bottom: 2px solid black;
+}
+
+.container_main {
+  background: linear-gradient(90deg, #8d8989, #d3bdbd, rgb(247, 247, 247));
+  width: 100%;
+  height: 100vh;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.form_cadastro,
+.form_login {
+  background-color: aliceblue;
+  width: 50%;
+  padding: 3em 2%;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 1px black;
+}
+
+.form_login input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #999999;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.form_cadastro input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #999999;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(180deg, #8d8989, #d3bdbd, rgb(247, 247, 247));
+  font-size: 1.5em;
+  color: rgb(65, 62, 62);
+  margin-top: 25px;
+  width: 70%;
+  transform: translateX(20%);
+}
+
+input[type="submit"]:active {
+  background: linear-gradient(360deg, #8d8989, #d3bdbd, rgb(247, 247, 247));
+}
+#campoCadast,
+#campoObrigatorio {
+  color: rgb(139, 11, 11);
+  background-color: #f0cccc;
+  width: 100%;
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Atividade Mapa</title>
+  </head>
+  <body>
+    <header class="nav_header">
+      <div class="logomarca">
+        <img
+          src="https://i.pinimg.com/originals/6f/a9/2c/6fa92c7eef31d292c02856cf0f67d749.png"
+          alt="imagem_logomarca"
+        />
+      </div>
+      <nav class="header_botao">
+        <ul>
+          <li id="btn_login">Ja sou cadastrado</li>
+          <li id="btn_cadast">Sou novo poraqui</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container_main">
+      <section class="formulario">
+        <div id="form_login" class="form_login">
+          <form id="login">
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Digite seu Email" />
+            <label for="password">Senha: </label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite sua Senha"
+            />
+            <span id="campoObrigatorio"></span>
+            <input type="submit" id="btn_login" value="Entra" />
+          </form>
+        </div>
+
+        <div id="form_cadastro" class="form_cadastro hiden">
+          <form id="cadastrado">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" placeholder="Digite seu Nome" />
+            <label for="cep">Cep: </label>
+            <input type="text" id="cep" placeholder="Digite seu Cep" />
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Digite seu Email"
+            />
+            <label for="password">Senha: </label>
+            <input
+              type="password"
+              id="passwordInput"
+              placeholder="Digite sua Senha"
+            />
+            <span id="campoCadast"></span>
+            <input type="submit" id="btn_login" value="Cadastrar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
